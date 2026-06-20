@@ -22,11 +22,11 @@ function App() {
         </div>
       </header>
 
-      <div id="hero-section" className="flex justify-between max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
-        <div id="hero-content">
-          <h1 id="hero-title" className="font-quicksand font-bold text-[#FFFFFF] text-[42px] leading-none mb-[20px]">
+      <div id="hero-section" className="flex flex-nowrap justify-between items-end overflow-hidden max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
+        <div id="hero-content" className="z-10 ">
+          <h1 id="hero-title" className="font-quicksand font-bold text-[#FFFFFF] text-[34px] md:text-[42px] leading-none mb-[20px] break-normal whitespace-normal hyphens-none">
             Dê am
-            <img src={heart} alt="Coração" className="inline-block max-w-[24.38054841148871px] h-8 mx-1 align-middle"/>
+            <img src={heart} alt="Coração" className="inline-block max-w-[24.38054841148871px] h-8"/>
             r,
             <br />
             adote
@@ -48,10 +48,10 @@ function App() {
             gatinho.
           </h1>
 
-          <button className='flex items-center justify-center bg-[#368C5E] text-[21px] text-[#FFFCCC] font-black w-[158px] h-[36.589473724365234px] rounded-[24.95px]'>quero doar</button>
+          <button className='mb-[30px] flex items-center justify-center bg-[#368C5E] text-[21px] text-[#FFFCCC] font-black w-[158px] h-[36.589473724365234px] rounded-[24.95px]'>quero doar</button>
         </div>
-        <div id='hero-img' className='flex items-end'>
-          <img src={catImg} alt="Gato" className='w-[205px]'/>
+        <div id='hero-img' className='w-[205px] h-[271px] bg-no-repeat' style={{backgroundImage: `url(${catImg})`, backgroundSize: 'contain', backgroundPosition: 'right bottom'}}>
+          
         </div>
       </div>
 
