@@ -22,7 +22,7 @@ function App() {
         </div>
       </header>
 
-      <div id="hero-section" className="flex flex-nowrap justify-between items-end overflow-hidden max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
+      <div id="hero-section" className="relative flex flex-nowrap justify-between items-end overflow-hidden max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
         <div id="hero-content" className="z-10 ">
           <h1 id="hero-title" className="font-quicksand font-bold text-[#FFFFFF] text-[34px] md:text-[42px] leading-none mb-[20px] break-normal whitespace-normal hyphens-none">
             Dê am
@@ -51,6 +51,12 @@ function App() {
           <button className='mb-[30px] flex items-center justify-center bg-[#368C5E] text-[21px] text-[#FFFCCC] font-black w-[158px] h-[36.589473724365234px] rounded-[24.95px]'>quero doar</button>
         </div>
         <div id='hero-img' className='w-[205px] h-[271px] bg-no-repeat' style={{backgroundImage: `url(${catImg})`, backgroundSize: 'contain', backgroundPosition: 'right bottom'}}>
+        
+        <img
+          src={heart}
+          alt="Coração"
+          className="absolute w-[23.337528695133464px] right-[20px] bottom-[85px] rotate-[20deg] z-10"
+        />
           
         </div>
       </div>
