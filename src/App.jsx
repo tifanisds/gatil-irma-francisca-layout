@@ -1,5 +1,6 @@
 import './App.css'
 import logo from './assets/logo.svg'
+import logoFooter from './assets/logo-footer.svg'
 import menuToggle from './assets/menu-toggle.svg'
 import insta from './assets/insta.svg'
 import pix from './assets/pix.svg'
@@ -24,7 +25,7 @@ function App() {
 
       <div id="hero-section" className="relative flex flex-nowrap justify-between items-end overflow-hidden max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
         <div id="hero-content" className="z-10 ">
-          <h1 id="hero-title" className="font-quicksand font-bold text-[#FFFFFF] text-[34px] md:text-[42px] leading-none mb-[20px] break-normal whitespace-normal hyphens-none">
+          <h1 id="hero-title" className="font-quicksand font-semibold text-[#FFFFFF] text-[34px] md:text-[42px] leading-none mb-[20px] break-normal whitespace-normal hyphens-none">
             Dê am
             <img src={heart} alt="Coração" className="inline-block max-w-[24.38054841148871px] h-8"/>
             r,
@@ -63,7 +64,7 @@ function App() {
 
       <footer id='footer' className='flex items-center justify-center bg-[#1A5331] h-[386px]'>
         <div className='w-[223.4762725830078px]'>
-          <img src={logo} alt="Gatil Irmã Francisca" />
+          <img src={logoFooter} alt="Gatil Irmã Francisca" />
 
           <div id='social media' className='flex space-x-4 my-[30px]'>
             <div id='instagram' className='flex justify-center items-center bg-[#FF9D3B] w-[43.60165786743164px] h-[43.60165786743164px] rounded-[100%]'><img src={insta} alt="Instagram" className='w-[24.548633575439453px]' /></div>
