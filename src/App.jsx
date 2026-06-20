@@ -3,12 +3,15 @@ import logo from './assets/logo.svg'
 import logoFooter from './assets/logo-footer.svg'
 import menuToggle from './assets/menu-toggle.svg'
 import insta from './assets/insta.svg'
+import instaPreview from './assets/instagram-preview.svg'
 import pix from './assets/pix.svg'
 import apoiaSe from './assets/apoiase.svg'
 import email from './assets/mail.svg'
 import heart from './assets/heart-vector.svg'
 import catIcon from './assets/cat-icon-hero-section.svg'
 import catImg from './assets/cat-hero-section.png'
+import ballWool from './assets/ball-of-wool.svg'
+
 
 
 function App() {
@@ -60,6 +63,22 @@ function App() {
         />
           
         </div>
+      </div>
+
+
+      <div id='final-cta' className='relative flex flex-col items-center justify-center h-[276px] bg-[#368C5E]'>
+        <p className='text-center font-quicksand text-[32px] text-[#FFFCCC] font-bold leading-none mb-[10px]'>Você já <br />
+        conhece o Gatil.</p>
+        <p className='text-[18px] text-[#FFFCCC] font-light mb-[20px]'>Agora, faça parte!</p>
+
+        <button className='flex items-center justify-center bg-[#FF9D3B] w-[294px] h-[37px] text-[22.8px] text-[#FFFCCC] font-quicksand font-semibold rounded-[34px] mb-[20px]'>Quero doar</button>
+        <button className='flex items-center justify-center bg-[#FF9D3B] w-[294px] h-[37px] text-[22.8px] text-[#FFFCCC] font-quicksand font-semibold rounded-[34px]'>Quero adotar</button>
+
+        <img
+          src={ballWool}
+          alt="Novelo de lã"
+          className="absolute w-[101.0000004331793px] right-[15px] bottom-[125px] rotate-[1deg] z-10"
+        />
       </div>
 
       <footer id='footer' className='flex items-center justify-center bg-[#1A5331] h-[386px]'>
