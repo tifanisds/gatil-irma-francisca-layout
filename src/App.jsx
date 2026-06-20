@@ -5,12 +5,15 @@ import insta from './assets/insta.svg'
 import pix from './assets/pix.svg'
 import apoiaSe from './assets/apoiase.svg'
 import email from './assets/mail.svg'
+import heart from './assets/heart-vector.svg'
+import catIcon from './assets/cat-icon-hero-section.svg'
+import catImg from './assets/cat-hero-section.png'
 
 
 function App() {
   return (
-    <div id='container' className='bg-[#FFFCCC] w-full h-screen font-nunito'>
-      <header id='header' className='flex justify-between items-center w-full h-[64px] bg-[#368C5E] py-[14px] px-[24px]'>
+    <div id='container' className='font-nunito'>
+      <header id='header' className='flex justify-between items-center h-[64px] bg-[#368C5E] py-[14px] px-[24px]'>
         <button id='donation-button' className='flex bg-[#FF9D3B] font-black text-[#FFFCCC] w-[121px] h-[28px] rounded-[19px] items-center justify-center'>quero doar</button>
         
         <div className='flex'>
@@ -19,9 +22,42 @@ function App() {
         </div>
       </header>
 
+      <div id="hero-section" className="flex justify-between max-h-[271px] bg-[#FF9D3B] pl-[24px] pt-[16px]">
+        <div id="hero-content">
+          <h1 id="hero-title" className="font-quicksand font-bold text-[#FFFFFF] text-[42px] leading-none mb-[20px]">
+            Dê am
+            <img src={heart} alt="Coração" className="inline-block max-w-[24.38054841148871px] h-8 mx-1 align-middle"/>
+            r,
+            <br />
+            adote
+            <br />
+            um{" "}
+            <span className="relative inline-block w-[83px] h-[34px] bg-[#368C5E] rounded-[4px] align-middle">
+              <img
+                src={catIcon}
+                alt="Gato"
+                className="
+                  absolute
+                  left-1/2
+                  -translate-x-1/2
+                  -top-3
+                "
+              />
+            </span>
+            <br />
+            gatinho.
+          </h1>
+
+          <button className='flex items-center justify-center bg-[#368C5E] text-[21px] text-[#FFFCCC] font-black w-[158px] h-[36.589473724365234px] rounded-[24.95px]'>quero doar</button>
+        </div>
+        <div id='hero-img' className='flex items-end'>
+          <img src={catImg} alt="Gato" className='w-[205px]'/>
+        </div>
+      </div>
+
       <footer id='footer' className='flex items-center justify-center bg-[#1A5331] h-[386px]'>
         <div className='w-[223.4762725830078px]'>
-          <img src={logo} alt="Gatil Irmã Francisca" className='w-full' />
+          <img src={logo} alt="Gatil Irmã Francisca" />
 
           <div id='social media' className='flex space-x-4 my-[30px]'>
             <div id='instagram' className='flex justify-center items-center bg-[#FF9D3B] w-[43.60165786743164px] h-[43.60165786743164px] rounded-[100%]'><img src={insta} alt="Instagram" className='w-[24.548633575439453px]' /></div>
@@ -36,7 +72,7 @@ function App() {
             gatilirmafrancisca@gmail.com
           </p>
 
-          <hr className="my-[15px] w-full border-0 border-t border-white/20" />
+          <hr className="my-[15px] border-0 border-t border-white/20" />
 
           <p id="legal-info" className='text-center text-[#FFFCCC] font-normal'>
             Todos os direitos reservados © <br />
